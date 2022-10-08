@@ -1,0 +1,6 @@
+ixigo:
+  postgres:
+    host: localhost
+    user: ${POSTGRES_USER:REPLACE_ME}
+    password: ${POSTGRES_PASSW:REPLACE_ME}
+      
