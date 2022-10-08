@@ -1,0 +1,4 @@
+ixigo:
+  postgres:
+    host: rasp8gb.lan
+      
