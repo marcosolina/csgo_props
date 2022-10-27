@@ -18,7 +18,7 @@ ixigo:
       protocol: "http://"
       domain: "localhost"
       port: 8763
-      base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}"
+      base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}/ixigoproxy"
     demmanager:
       gateway-path: "ixigo-dem-manager"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.demmanager.gateway-path}/demmanager"
