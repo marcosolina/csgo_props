@@ -17,7 +17,7 @@ ixigo:
     gateway:
       protocol: "http://"
       domain: "localhost"
-      port: 8086
+      port: 8763
       base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}"
     demmanager:
       gateway-path: "ixigo-dem-manager"
