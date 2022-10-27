@@ -13,4 +13,14 @@ ixigo:
       parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
       parser-execution-type: "SYNC"             # Enum: ASYNC, SYNC
       parser-exec-path: "E:\\Workspaces\\Git\\csgo_util\\DemParser\\bin\\Debug\\netcoreapp3.1\\DemParser.dll"       # This is the full path to the DemParser executable
+  end-points:    
+    gateway:
+      protocol: "http://"
+      domain: "localhost"
+      port: 8086
+      base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}"
+    demmanager:
+      gateway-path: "ixigo-dem-manager"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.demmanager.gateway-path}/demmanager"
+      post-dem-file: "${ixigo.end-points.demmanager.base-url}/files"
       
