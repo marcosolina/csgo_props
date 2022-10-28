@@ -1,3 +1,7 @@
+spring:
+  codec:
+    max-in-memory-size: 100MB
+
 ixigo:
   postgres:
     host: localhost
