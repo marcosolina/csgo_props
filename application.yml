@@ -16,16 +16,15 @@ ixigo:
   end-points:    
     gateway:
       protocol: "https://"
-      domain: "marco.selfip.net"
-      #port: 8763
-      port: 443
+      domain: "localhost"
+      port: 8763
       base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}/ixigoproxy"
     demmanager:
       gateway-path: "ixigo-dem-manager"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.demmanager.gateway-path}/demmanager"
       post-dem-file: "${ixigo.end-points.demmanager.base-url}/files"
       get-dem-file: "${ixigo.end-points.demmanager.base-url}/files/%s"
-      get-all-dem-file: "${ixigo.end-points.demmanager.base-url}/files/all" # TODO remove /all for refactored
-      post-parse-file: "${ixigo.end-points.demmanager.base-url}/parse"
+      remove-dem-file-from-queue: "${ixigo.end-points.demmanager.base-url}/files/%s"
+      post-parse-queued-files: "${ixigo.end-points.demmanager.base-url}/parse/queued"
       post-parse-all-files: "${ixigo.end-points.demmanager.base-url}/parse/all"
       
