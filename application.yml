@@ -25,5 +25,7 @@ ixigo:
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.demmanager.gateway-path}/demmanager"
       post-dem-file: "${ixigo.end-points.demmanager.base-url}/files"
       get-dem-file: "${ixigo.end-points.demmanager.base-url}/files/%s"
-      get-all-dem-file: "${ixigo.end-points.demmanager.base-url}/files/all"
+      get-all-dem-file: "${ixigo.end-points.demmanager.base-url}/files/all" # TODO remove /all for refactored
+      post-parse-file: "${ixigo.end-points.demmanager.base-url}/parse"
+      post-parse-all-files: "${ixigo.end-points.demmanager.base-url}/parse/all"
       
