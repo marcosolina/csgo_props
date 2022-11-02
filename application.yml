@@ -37,4 +37,8 @@ ixigo:
       delete-dem-file-from-queue: "${ixigo.end-points.demmanager.base-url}/files/%s"
       post-parse-queued-files: "${ixigo.end-points.demmanager.base-url}/parse/queued"
       post-parse-all-files: "${ixigo.end-points.demmanager.base-url}/parse/all"
+      get-dem-data-scores-type: "${ixigo.end-points.demmanager.base-url}/demdata/scorestype"
+      get-dem-data-maps-played: "${ixigo.end-points.demmanager.base-url}/demdata/mapsplayed"
+      get-dem-data-users: "${ixigo.end-points.demmanager.base-url}/demdata/users"
+      get-dem-data-users-scores: "${ixigo.end-points.demmanager.base-url}/demdata/usersscores"
       
