@@ -1,3 +1,12 @@
+logging:
+  pattern:
+    console: "%d %-5level : %msg%n"
+    file: "%d %-5level : %msg%n"
+  level:
+    root: INFO
+    reactor:
+      Flux: OFF
+
 ixigo:
   postgres:
     host: localhost
