@@ -13,7 +13,7 @@ ixigo:
     user: ${POSTGRES_USER:REPLACE_ME}
     password: ${POSTGRES_PASSW:REPLACE_ME}
   telegram:
-    enabled: false
+    enabled: true
     token: ${TELEGRAM_BOT_TOKEN:xxxxxx}
     chat-group-id: ${TELEGRAM_CHAT_GROUP_ID:xxxxxx}
   demmanager:
