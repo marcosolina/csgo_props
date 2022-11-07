@@ -41,4 +41,10 @@ ixigo:
       get-dem-data-maps-played: "${ixigo.end-points.demmanager.base-url}/demdata/mapsplayed"
       get-dem-data-users: "${ixigo.end-points.demmanager.base-url}/demdata/users"
       get-dem-data-users-scores: "${ixigo.end-points.demmanager.base-url}/demdata/usersscores"
+    eventdispatcher:
+      gateway-path: "ixigo-event-dispatcher"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.eventdispatcher.gateway-path}/eventsdispatcher"
+      post-event: "${ixigo.end-points.eventdispatcher.base-url}/event"
+      post-listener: "${ixigo.end-points.eventdispatcher.base-url}/listener"
+      delete-listener: "${ixigo.end-points.eventdispatcher.base-url}/listener"
       
