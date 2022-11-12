@@ -16,8 +16,8 @@ ixigo:
     enabled: true
     token: ${TELEGRAM_BOT_TOKEN:xxxxxx}
     chat-group-id: ${TELEGRAM_CHAT_GROUP_ID:xxxxxx}
-  demmanager:
-    demfileprops:
+  dem-manager:
+    dem-file-props:
       root-folder: "C:\\Temp\\demfiles"
       parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
       parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
@@ -28,23 +28,28 @@ ixigo:
       domain: "localhost"
       port: 8763
       base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}/ixigoproxy"
-    demmanager:
+    dem-manager:
       gateway-path: "ixigo-dem-manager"
-      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.demmanager.gateway-path}/demmanager"
-      post-dem-file: "${ixigo.end-points.demmanager.base-url}/files"
-      get-dem-file: "${ixigo.end-points.demmanager.base-url}/files/%s"
-      get-all-dem-files: "${ixigo.end-points.demmanager.base-url}/files"
-      delete-dem-file-from-queue: "${ixigo.end-points.demmanager.base-url}/files/%s"
-      post-parse-queued-files: "${ixigo.end-points.demmanager.base-url}/parse/queued"
-      post-parse-all-files: "${ixigo.end-points.demmanager.base-url}/parse/all"
-      get-dem-data-scores-type: "${ixigo.end-points.demmanager.base-url}/demdata/scorestype"
-      get-dem-data-maps-played: "${ixigo.end-points.demmanager.base-url}/demdata/mapsplayed"
-      get-dem-data-users: "${ixigo.end-points.demmanager.base-url}/demdata/users"
-      get-dem-data-users-scores: "${ixigo.end-points.demmanager.base-url}/demdata/usersscores"
-    eventdispatcher:
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.dem-manager.gateway-path}/demmanager"
+      post-dem-file: "${ixigo.end-points.dem-manager.base-url}/files"
+      get-dem-file: "${ixigo.end-points.dem-manager.base-url}/files/%s"
+      get-all-dem-files: "${ixigo.end-points.dem-manager.base-url}/files"
+      delete-dem-file-from-queue: "${ixigo.end-points.dem-manager.base-url}/files/%s"
+      post-parse-queued-files: "${ixigo.end-points.dem-manager.base-url}/parse/queued"
+      post-parse-all-files: "${ixigo.end-points.dem-manager.base-url}/parse/all"
+      get-dem-data-scores-type: "${ixigo.end-points.dem-manager.base-url}/demdata/scorestype"
+      get-dem-data-maps-played: "${ixigo.end-points.dem-manager.base-url}/demdata/mapsplayed"
+      get-dem-data-users: "${ixigo.end-points.dem-manager.base-url}/demdata/users"
+      get-dem-data-users-scores: "${ixigo.end-points.dem-manager.base-url}/demdata/usersscores"
+    event-dispatcher:
       gateway-path: "ixigo-event-dispatcher"
-      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.eventdispatcher.gateway-path}/eventsdispatcher"
-      post-event: "${ixigo.end-points.eventdispatcher.base-url}/event"
-      post-listener: "${ixigo.end-points.eventdispatcher.base-url}/listener"
-      delete-listener: "${ixigo.end-points.eventdispatcher.base-url}/listener"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.event-dispatcher.gateway-path}/eventsdispatcher"
+      post-event: "${ixigo.end-points.event-dispatcher.base-url}/event"
+      post-listener: "${ixigo.end-points.event-dispatcher.base-url}/listener"
+      delete-listener: "${ixigo.end-points.event-dispatcher.base-url}/listener"
+    players-manager:
+      gateway-path: "ixigo-players-manager"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.players-manager.gateway-path}/playersmanager"
+      get-teams: "${ixigo.end-points.players-manager.base-url}/teams"
+      
       
