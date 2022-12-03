@@ -25,7 +25,16 @@ ixigo:
   ixigo-server:
     port: 27015
     host-name: 192.168.1.24
-    rcon-password: ${IXIGO_SERVER_PASSW:localtest} 
+    rcon-password: ${IXIGO_SERVER_PASSW:localtest}
+  discord:
+    bottoken: ${DISCORD_BOT_TOKEN}
+    serverId: 700738420686717000                                                                          # You can get these IDs from Discord,
+    textChannels:                                                                                         # right click on the specific item and copy the ID
+      general: 700738421131444234 
+    voiceChannels:
+      terrorist: 706943323084161124
+      ct: 706942842173653094
+      general: 700738421131444236
   end-points:    
     gateway:
       protocol: "http://"
