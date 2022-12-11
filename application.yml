@@ -28,13 +28,13 @@ ixigo:
     rcon-password: ${IXIGO_SERVER_PASSW:localtest}
   discord:
     bottoken: ${DISCORD_BOT_TOKEN}
-    serverId: 700738420686717000                                                                          # You can get these IDs from Discord,
+    serverId: 838818767219195924                                                                          # You can get these IDs from Discord,
     textChannels:                                                                                         # right click on the specific item and copy the ID
-      general: 700738421131444234 
+      general: 838818767219195929 
     voiceChannels:
-      terrorist: 706943323084161124
-      ct: 706942842173653094
-      general: 700738421131444236
+      terrorist: 838818771136413777
+      ct: 839591293545611305
+      general: 838818767219195932
   end-points:    
     gateway:
       protocol: "http://"
