@@ -1,0 +1,8 @@
+com:
+  ixigo:
+    serverhelper:
+      dem-files:
+        dem-files-folder-full-path: "/csgoserver/ixi_go/CsgoServer/csgo" # Full path the the csgo game server folder
+      events:
+        event-file-reader-impl: "TAIL" # TAIL or POWERSHELL
+        event-file-path: "${com.ixigo.serverhelper.dem-files.dem-files-folder-full-path}/addons/sourcemod/event.txt"
