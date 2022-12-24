@@ -15,5 +15,7 @@ ixigo:
       parser-exec-path: '/demParser/DemParser'       # This is the full path to the DemParser executable
   end-points:    
     gateway:
-      domain: "ixigo-proxy"   
+      domain: "ixigo-proxy"
+  ixigo-server:
+    host-name: "csgo"
       
