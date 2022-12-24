@@ -13,5 +13,7 @@ ixigo:
       parser-environment: "RASP"             # Enum: WINDOWS, RASP
       parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
       parser-exec-path: '/demParser/DemParser'       # This is the full path to the DemParser executable
-      
+  end-points:    
+    gateway:
+      domain: "ixigo-proxy"   
       
