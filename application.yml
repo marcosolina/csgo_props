@@ -25,7 +25,7 @@ ixigo:
   ixigo-server:
     port: 27015
     host-name: 192.168.1.24
-    rcon-password: ${IXIGO_SERVER_PASSW:localtest}
+    rcon-password: ${IXIGO_CSGO_PASSW:localtest}
   discord:
     bottoken: ${DISCORD_BOT_TOKEN}
     serverId: 838818767219195924                                                                          # You can get these IDs from Discord,

@@ -23,4 +23,5 @@ ixigo:
       domain: "ixigo-proxy"
   ixigo-server:
     host-name: "csgo"
+    rcon-password: ${IXIGO_CSGO_PASSW}
       
