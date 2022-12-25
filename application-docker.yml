@@ -7,7 +7,7 @@ ixigo:
   postgres:
     host: dbpostgres
   telegram:
-    enabled: false
+    enabled: true
     token: '{cipher}b81e3627130bdca73a8e7ecaed8c18c3709cffc1fee4154682f4ad0a631f52e910a60f40d4d4ba3ab7e75aa039239fda8d0afe5a147004828528ef40baf486ee'
     chat-group-id: '{cipher}6d3f5656e9ac682048064bdd5fa832a9eabf8d68a7d6d51f55a1695eea553162'
   discord:
