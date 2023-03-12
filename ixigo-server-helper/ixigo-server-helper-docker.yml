@@ -7,3 +7,5 @@ com:
       events:
         event-file-reader-impl: "TAIL" # TAIL or POWERSHELL
         event-file-path: "${com.ixigo.serverhelper.dem-files.dem-files-folder-full-path}/addons/sourcemod/event.txt"
+      maps:
+        root-folder: "${com.ixigo.serverhelper.dem-files.dem-files-folder-full-path}}/maps" # Full path to the csgo / maps folder
