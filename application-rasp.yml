@@ -11,7 +11,7 @@ ixigo:
     dem-file-props:
       root-folder: "/var/www/html/cstrike/demfiles"
       parser-environment: "RASP"             # Enum: WINDOWS, RASP
-      parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
+      parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
       parser-exec-path: "/opt/ixigo/DemParser/DemParser"       # This is the full path to the DemParser executable
   discord:
     bottoken: ${DISCORD_BOT_TOKEN}
