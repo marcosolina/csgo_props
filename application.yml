@@ -21,6 +21,7 @@ ixigo:
       root-folder: "C:\\Temp\\demfiles"
       parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
       parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
+      process-files-in-parallel: true
       parser-exec-path: "E:\\Workspaces\\Git\\csgo_util\\DemParser\\bin\\Debug\\netcoreapp3.1\\DemParser.dll"       # This is the full path to the DemParser executable
   ixigo-server:
     port: 27015
