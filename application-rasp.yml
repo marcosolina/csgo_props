@@ -1,6 +1,6 @@
 ixigo:
   postgres:
-    host: 192.168.1.14
+    host: rasp8gb.lan
     user: ${POSTGRES_USER:REPLACE_ME}
     password: ${POSTGRES_PASSWORD:REPLACE_ME}
   telegram:
@@ -25,4 +25,5 @@ ixigo:
       general: 700738421131444236
   end-points:    
     gateway:
-      domain: "192.168.1.27"
+      protocol: "https://"
+      domain: "marco.selfip.net"
