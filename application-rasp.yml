@@ -27,3 +27,4 @@ ixigo:
     gateway:
       protocol: "https://"
       domain: "marco.selfip.net"
+      port: 443
