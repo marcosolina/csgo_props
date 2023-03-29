@@ -1,6 +1,6 @@
 ixigo:
   postgres:
-    host: 192.168.1.14
+    host: rasp8gb.lan
     user: ${POSTGRES_USER:REPLACE_ME}
     password: ${POSTGRES_PASSWORD:REPLACE_ME}
   telegram:
