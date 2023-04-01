@@ -20,8 +20,8 @@ ixigo:
     textChannels:                                                                                         # right click on the specific item and copy the ID
       general: 700738421131444234 
     voiceChannels:
-      terrorist: 706942842173653094
-      ct: 839591293545611305
+      terrorist: 839591293545611305
+      ct: 706942842173653094
       general: 700738421131444236
   end-points:    
     gateway:
