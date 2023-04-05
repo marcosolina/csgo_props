@@ -1,0 +1,73 @@
+logging:
+  pattern:
+    console: "%d %-5level - %logger{36} : %msg%n"
+    file: "%d %-5level : %msg%n"
+  level:
+    root: INFO
+    reactor:
+      Flux: OFF
+
+ixigo:
+  postgres:
+    host: localhost
+    user: ${POSTGRES_USER:REPLACE_ME}
+    password: ${POSTGRES_PASSWORD:REPLACE_ME}
+  telegram:
+    enabled: false
+    token: ${TELEGRAM_BOT_TOKEN:xxxxxx}
+    chat-group-id: ${TELEGRAM_CHAT_GROUP_ID:xxxxxx}
+  dem-manager:
+    dem-file-props:
+      root-folder: "C:\\Temp\\demfiles"
+      parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
+      parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
+      process-files-in-parallel: true
+      parser-exec-path: "E:\\Workspaces\\Git\\csgo_util\\DemParser\\bin\\Debug\\netcoreapp3.1\\DemParser.dll"       # This is the full path to the DemParser executable
+  ixigo-server:
+    port: 27015
+    host-name: 192.168.1.24
+    rcon-password: ${IXIGO_CSGO_PASSW:localtest}
+  discord:
+    bottoken: ${DISCORD_BOT_TOKEN}
+    serverId: 838818767219195924                                                                          # You can get these IDs from Discord,
+    textChannels:                                                                                         # right click on the specific item and copy the ID
+      general: 838818767219195929 
+    voiceChannels:
+      terrorist: 838818771136413777
+      ct: 839591293545611305
+      general: 838818767219195932
+  end-points:    
+    gateway:
+      protocol: "http://"
+      domain: "localhost"
+      port: 8763
+      base-url: "${ixigo.end-points.gateway.protocol}${ixigo.end-points.gateway.domain}:${ixigo.end-points.gateway.port}/ixigoproxy"
+    dem-manager:
+      gateway-path: "ixigo-dem-manager"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.dem-manager.gateway-path}/demmanager"
+      post-dem-file: "${ixigo.end-points.dem-manager.base-url}/files"
+      get-dem-file: "${ixigo.end-points.dem-manager.base-url}/files/%s"
+      get-all-dem-files: "${ixigo.end-points.dem-manager.base-url}/files"
+      delete-dem-file-from-queue: "${ixigo.end-points.dem-manager.base-url}/files/%s"
+      post-parse-queued-files: "${ixigo.end-points.dem-manager.base-url}/parse/queued"
+      post-parse-all-files: "${ixigo.end-points.dem-manager.base-url}/parse/all"
+      get-dem-data-scores-type: "${ixigo.end-points.dem-manager.base-url}/demdata/scorestype"
+      get-dem-data-maps-played: "${ixigo.end-points.dem-manager.base-url}/demdata/mapsplayed"
+      get-dem-data-users: "${ixigo.end-points.dem-manager.base-url}/demdata/users"
+      get-dem-data-users-scores: "${ixigo.end-points.dem-manager.base-url}/demdata/usersscores"
+    event-dispatcher:
+      gateway-path: "ixigo-event-dispatcher"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.event-dispatcher.gateway-path}/eventsdispatcher"
+      post-event: "${ixigo.end-points.event-dispatcher.base-url}/event"
+      post-listener: "${ixigo.end-points.event-dispatcher.base-url}/listener"
+      delete-listener: "${ixigo.end-points.event-dispatcher.base-url}/listener"
+    players-manager:
+      gateway-path: "ixigo-players-manager"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.players-manager.gateway-path}/playersmanager"
+      get-teams: "${ixigo.end-points.players-manager.base-url}/teams"
+    rcon-api:
+      gateway-path: "ixigo-rcon-api"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.rcon-api.gateway-path}/rcon"
+      post-command: "${ixigo.end-points.rcon-api.base-url}/cmd"
+      
+      

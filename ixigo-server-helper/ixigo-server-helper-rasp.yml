@@ -2,8 +2,8 @@ com:
   ixigo:
     serverhelper:
       dem-files:
-        dem-files-folder-full-path: "/csgoserver/ixi_go/CsgoServer/csgo" # Full path the the csgo game server folder
-        upload-files-only-if-monday: false                                                     # It sends the DEM files to the dem manager service only if it is Monday
+        dem-files-folder-full-path: "${ENV_CSGO_INSTALL_FOLDER}/csgo" # Full path the the csgo game server folder
+        upload-files-only-if-monday: true                                                     # It sends the DEM files to the dem manager service only if it is Monday
       events:
         event-file-reader-impl: "TAIL" # TAIL or POWERSHELL
         event-file-path: "${com.ixigo.serverhelper.dem-files.dem-files-folder-full-path}/addons/sourcemod/event.txt"

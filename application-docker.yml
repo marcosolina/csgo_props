@@ -1,0 +1,27 @@
+logging:
+  level:
+    com:
+      ixigo: DEBUG
+
+ixigo:
+  postgres:
+    host: dbpostgres
+  telegram:
+    enabled: true
+    token: '{cipher}b81e3627130bdca73a8e7ecaed8c18c3709cffc1fee4154682f4ad0a631f52e910a60f40d4d4ba3ab7e75aa039239fda8d0afe5a147004828528ef40baf486ee'
+    chat-group-id: '{cipher}6d3f5656e9ac682048064bdd5fa832a9eabf8d68a7d6d51f55a1695eea553162'
+  discord:
+    bottoken: '{cipher}1d6b5a80f9bb1484026e1f06edd3748e13c2f494249b659d2d70e4aa9735741e290dc55b4b7c6d6f55ed9404dad9dda94666ef9e9613b4e8fe0e3e5a0309cb51bce25c03e1cff366793d27dce405ff302d3c0bc0320343ea068cba60d164c1da'
+  dem-manager:
+    dem-file-props:
+      root-folder: "/demFiles"
+      parser-environment: "RASP"             # Enum: WINDOWS, RASP
+      parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
+      parser-exec-path: '/demParser/DemParser'       # This is the full path to the DemParser executable
+  end-points:    
+    gateway:
+      domain: "ixigo-proxy"
+  ixigo-server:
+    host-name: "csgo"
+    rcon-password: ${IXIGO_CSGO_PASSW}
+      
