@@ -6,10 +6,6 @@ logging:
     root: INFO
     reactor:
       Flux: OFF
-      
-spring:
-  codec:
-    max-in-memory-size: 52428800 #50MB
 
 ixigo:
   postgres:
