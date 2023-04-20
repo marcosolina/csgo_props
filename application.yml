@@ -52,9 +52,9 @@ ixigo:
       post-parse-queued-files: "${ixigo.end-points.dem-manager.base-url}/parse/queued"
       post-parse-all-files: "${ixigo.end-points.dem-manager.base-url}/parse/all"
       get-dem-data-scores-type: "${ixigo.end-points.dem-manager.base-url}/demdata/scorestype"
-      get-dem-data-maps-played: "${ixigo.end-points.dem-manager.base-url}/demdata/mapsplayed"
       get-dem-data-users: "${ixigo.end-points.dem-manager.base-url}/demdata/users"
       get-dem-data-users-scores: "${ixigo.end-points.dem-manager.base-url}/demdata/usersscores"
+      get-charts-data-maps-played: "${ixigo.end-points.dem-manager.base-url}/charts/mapsplayed"
     event-dispatcher:
       gateway-path: "ixigo-event-dispatcher"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.event-dispatcher.gateway-path}/eventsdispatcher"
