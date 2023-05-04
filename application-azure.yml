@@ -1,6 +1,6 @@
 ixigo:
   ixigo-server:
     port: 27015
-    host-name: 192.168.1.24
+    host-name: ixigo.selfip.net
     rcon-password: ${IXIGO_CSGO_PASSW:localtest}
       
