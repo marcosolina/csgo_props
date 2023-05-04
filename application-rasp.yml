@@ -14,6 +14,8 @@ ixigo:
       parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
       process-files-in-parallel: false
       parser-exec-path: "/opt/ixigo/DemParser/DemParser"       # This is the full path to the DemParser executable
+  ixigo-server:
+    host-name: ixigo.selfip.net
   discord:
     bottoken: ${DISCORD_BOT_TOKEN}
     serverId: 700738420686717000                                                                          # You can get these IDs from Discord,
