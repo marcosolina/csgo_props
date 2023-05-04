@@ -1,2 +1,11 @@
 server:
   port: 8084
+
+com:
+  ixigo:
+    serverhelper:
+      dyndns:
+        hostname: ixigo.selfip.net
+        user-name: '{cipher}917a8f6e7b74a25831aaebf6aa6fe11a76aae5e3aa03955ad193ddc396ab87a4'
+        dns-key: '{cipher}c9c23826a0b6029c5764bd183a8951917b63c5ec8ac7c19535027b4b13b3e77483d36188dc34220ceb5ee3d17b5a6d5400f82c282b92b2e6ab8feed36d793428'
+        enabled: false
