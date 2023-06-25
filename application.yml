@@ -65,6 +65,10 @@ ixigo:
       gateway-path: "ixigo-players-manager"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.players-manager.gateway-path}/playersmanager"
       get-teams: "${ixigo.end-points.players-manager.base-url}/teams"
+    notification:
+      gateway-path: "ixigo-notification"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.notification.gateway-path}/notification"
+      post-telegram: "${ixigo.end-points.notification.base-url}/telegram"
     rcon-api:
       gateway-path: "ixigo-rcon-api"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.rcon-api.gateway-path}/rcon"
