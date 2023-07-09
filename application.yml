@@ -22,6 +22,7 @@ ixigo:
       parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
       parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
       process-files-in-parallel: true
+      parse-tool: NODE_JS                                                                                                   # Enum: NODE_JS, C_SHARP
       #parser-exec-path: "E:\\Workspaces\\Git\\csgo_util\\DemParser\\bin\\Debug\\netcoreapp3.1\\DemParser.dll"       # This is the full path to the DemParser executable
       parser-exec-path: "E:\\Workspaces\\Git\\csgo_util\\DemParserNodeJs\\examples\\dumpfile.ts"       # This is the full path to the DemParser executable
   ixigo-server:
