@@ -13,6 +13,7 @@ ixigo:
       parser-environment: "RASP"             # Enum: WINDOWS, RASP
       parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
       process-files-in-parallel: false
+      parse-tool: NODE_JS                                                                                                   # Enum: NODE_JS, C_SHARP
       #parser-exec-path: "/opt/ixigo/DemParser/DemParser"       # This is the full path to the DemParser executable
       parser-exec-path: "/opt/ixigo/DemParserNodeJs/examples/dumpfile.ts"       # This is the full path to the DemParser executable
   ixigo-server:
