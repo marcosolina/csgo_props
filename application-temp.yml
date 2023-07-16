@@ -1,0 +1,29 @@
+ixigo:
+  telegram:
+    enabled: true
+    token: '{cipher}b81e3627130bdca73a8e7ecaed8c18c3709cffc1fee4154682f4ad0a631f52e910a60f40d4d4ba3ab7e75aa039239fda8d0afe5a147004828528ef40baf486ee'
+    chat-group-id: '{cipher}6d3f5656e9ac682048064bdd5fa832a9eabf8d68a7d6d51f55a1695eea553162'
+  dem-manager:
+    dem-file-props:
+      root-folder: "/var/www/html/cstrike/demfiles"
+      parser-environment: "RASP"             # Enum: WINDOWS, RASP
+      parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
+      process-files-in-parallel: false
+      parser-exec-path: "/opt/ixigo/DemParser/DemParser"       # This is the full path to the DemParser executable
+      #parser-exec-path: "/opt/ixigo/DemParserNodeJs/examples/dumpfile.ts"       # This is the full path to the DemParser executable
+  ixigo-server:
+    host-name: ixigo.selfip.net
+  discord:
+    bottoken: ${DISCORD_BOT_TOKEN}
+    serverId: 700738420686717000                                                                          # You can get these IDs from Discord,
+    textChannels:                                                                                         # right click on the specific item and copy the ID
+      general: 700738421131444234 
+    voiceChannels:
+      terrorist: 706943323084161124
+      ct: 706942842173653094
+      general: 700738421131444236
+  end-points:    
+    gateway:
+      protocol: "https://"
+      domain: "marco.selfip.net"
+      port: 443
