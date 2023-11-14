@@ -18,7 +18,7 @@ ixigo:
     chat-group-id: ${TELEGRAM_CHAT_GROUP_ID:xxxxxx}
   dem-manager:
     dem-file-props:
-      root-folder: "C:\\Temp\\demfiles"
+      root-folder: "C:\\Users\\marco\\OneDrive\\Ixigo\\CS2-Dem-Files"
       parser-environment: "WINDOWS"             # Enum: WINDOWS, RASP
       parser-execution-type: SYNC                                                                                           # Enum: ASYNC, SYNC
       process-files-in-parallel: true
