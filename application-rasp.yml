@@ -15,6 +15,7 @@ ixigo:
       process-files-in-parallel: true
       #parser-exec-path: "/opt/ixigo/DemParser/DemParser"       # This is the full path to the DemParser executable
       parser-exec-path: "/opt/ixigo/DemParserNodeJs/examples/dumpfile.ts"       # This is the full path to the DemParser executable
+      parser-cs2-exec-path: "/opt/ixigo/DemoParserCS2/cs2DemoParser.ts"
   ixigo-server:
     host-name: ixigo.selfip.net
   discord:
