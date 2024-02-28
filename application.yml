@@ -6,6 +6,12 @@ logging:
     root: INFO
     reactor:
       Flux: OFF
+      
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB                                                                    # To be able to recevie HTTP request with big files
+      max-request-size: 200MB                                                                 # To be able to recevie HTTP request with big files
 
 ixigo:
   postgres:
