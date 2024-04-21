@@ -73,6 +73,10 @@ ixigo:
       gateway-path: "ixigo-players-manager"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.players-manager.gateway-path}/playersmanager"
       get-teams: "${ixigo.end-points.players-manager.base-url}/teams"
+    server-helper:
+      gateway-path: "ixigo-server-helper"
+      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.server-helper.gateway-path}/ixigohelper"
+      post-cs2input: "${ixigo.end-points.server-helper.base-url}/cs2input"
     notification:
       gateway-path: "ixigo-notification"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.notification.gateway-path}/notification"
