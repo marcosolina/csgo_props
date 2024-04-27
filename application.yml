@@ -20,6 +20,7 @@ ixigo:
     password: ${POSTGRES_PASSWORD:REPLACE_ME}
   telegram:
     enabled: false
+    allow-notifications-only-on-monday: false
     token: ${TELEGRAM_BOT_TOKEN:xxxxxx}
     chat-group-id: ${TELEGRAM_CHAT_GROUP_ID:xxxxxx}
   dem-manager:
