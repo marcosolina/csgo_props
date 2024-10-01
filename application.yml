@@ -86,9 +86,6 @@ ixigo:
       gateway-path: "ixigo-rcon-api"
       base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.rcon-api.gateway-path}/rcon"
       post-command: "${ixigo.end-points.rcon-api.base-url}/cmd"
-    discord-bot:
-      gateway-path: "ixigo-discord-bot"
-      base-url: "${ixigo.end-points.gateway.base-url}/${ixigo.end-points.discord-bot.gateway-path}/discordbot"
-      post-message: "${ixigo.end-points.discord-bot.base-url}/discord/chat"
+
       
       
