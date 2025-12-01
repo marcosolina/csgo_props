@@ -6,6 +6,11 @@ logging:
     root: INFO
     reactor:
       Flux: OFF
+
+server:
+  tomcat:
+    max-swallow-size: 500MB                                                                   # Maximum size of request body that Tomcat will swallow
+    max-http-form-post-size: 500MB       
       
 spring:
   servlet:
