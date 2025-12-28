@@ -9,7 +9,7 @@ ixigo:
       root-folder: "/var/www/html/cstrike/demfiles"
       parser-environment: "RASP"             # Enum: WINDOWS, RASP
       parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
-      process-files-in-parallel: true
+      process-files-in-parallel: false
       parser-exec-path: "/demParserCsgo/examples/dumpfile.ts"       # This is the full path to the DemParser executable
       parser-cs2-exec-path: "/demParserCs2/cs2DemoParser.ts"
   
