@@ -10,6 +10,6 @@ ixigo:
       parser-environment: "RASP"             # Enum: WINDOWS, RASP
       parser-execution-type: ASYNC                                                                                           # Enum: ASYNC, SYNC
       process-files-in-parallel: true
-      parser-exec-path: "/demParserCsgo/examples/dumpfile.js"       # This is the full path to the DemParser executable
+      parser-exec-path: "/demParserCsgo/examples/dumpfile.ts"       # This is the full path to the DemParser executable
       parser-cs2-exec-path: "/demParserCs2/cs2DemoParser.js"
   
