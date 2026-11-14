@@ -1,0 +1,12 @@
+# Services running as containers on the mini PC (csgo_util docker/compose.yml), active with
+# IXIGO_PROFILE=rasp,minipc. On top of "rasp": the Postgres container on the mini PC, and the
+# proxy on the mini PC as gateway for the calls between services (no round trip through the
+# public Nginx Proxy Manager, and a test stack there never calls the production services).
+ixigo:
+  postgres:
+    host: 192.168.1.24
+  end-points:
+    gateway:
+      protocol: "http://"
+      domain: "192.168.1.24"
+      port: 8763
