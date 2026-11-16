@@ -1,0 +1,7 @@
+# dem-manager on the mini PC (12 threads, the .dem files come from the NAS over NFS).
+# How many .dem files are parsed at the same time; each one is a Node process that holds the whole
+# demo's stats in memory, so keep DEM_MANAGER_MEM_LIMIT in the mini PC .env in line with it.
+ixigo:
+  dem-manager:
+    dem-file-props:
+      parallel-parsers: 6
